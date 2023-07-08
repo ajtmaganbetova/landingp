@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@200;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
     <title>Interior Design Studio</title>
 </head>
@@ -16,23 +13,37 @@
                 <img src="img/logo.png" alt="logotype" class="logo">
             </div>
             <div class="right-side">
-                <ul>
+                <ul class="nav-bar">
                     <li><a href="">About</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Work</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
                 <button class="get-in-touch">Get in touch</button>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
+        <hr class="block-seperator">
         <div class="content">
             <div class="section-home">
-                <h1 class="main-header">Unique-customized solutions in construction and furnishing.</h1>
+                <h1 class="main-header">Unique-customized solutions in construction and furnishing</h1>
                 <span class="home-text">Transform your space into your dream home. Let's make your interior better.</span>
                 <button class="our-services">Our services</button>
             </div>
         </div>
         <div class="footer"></div>
     </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick =  function() {
+            navbar = document.querySelector(".nav-bar");
+            navbar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
