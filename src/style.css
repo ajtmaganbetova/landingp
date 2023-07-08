@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@200;400&display=swap');
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1635776062043-223faf322554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #151515;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #151515;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #151515;
+    border: 1px solid #151515;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 70px;
+}
+
+.get-in-touch:hover {
+    background: #151515;
+    transition: 0.5s;
+    color: white;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+    padding: 70px;
+    background-color: white;
+    align-items: stretch;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    width: 1125px;
+    height: 1px;
+    background: #cecece;
+    position: absolute;
+    top: 26%;
+}
+
+.logo {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.right-side ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #151515;
+    display: block;
+    margin: 2px;
+}
+
+.right-side ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.section-home h1 {
+    padding-top: 30px;
+    text-align: left;
+    font-size: 80px;
+    max-width: 1000px;
+}
+
+.section-home span {
+    display: block;
+    font-size: 30px;
+    font-weight: 200;
+    max-width: 800px;
+    padding-bottom: 30px;
+}
+
+.our-services {
+    margin: 30px 0px;
+    color: white;
+    background-color: #151515;
+}
