@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@200;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@200;400&display=swap'); */
 
 body {
     background-image: url("https://images.unsplash.com/photo-1635776062043-223faf322554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80");
@@ -98,8 +98,12 @@ button {
     transition: 0.5s;
 }
 
-.section-home h1 {
+.content {
     padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.section-home h1 {
     text-align: left;
     font-size: 80px;
     max-width: 1000px;
@@ -119,9 +123,14 @@ button {
     background-color: #151515;
 }
 
-@media only screen and (max-width: 1000px) {
-    h1 {
-        font-size: 25vw;
+@media (max-width: 1000px) {
+    .section-home h1 {
+        font-size: 50px;
+        max-width: 600px;
+    }
+
+    .section-home span {
+        font-size: 25px;
     }
 
     .page-wrapper {
@@ -138,8 +147,11 @@ button {
         width: 30px;
         height: 2px;
         background: #151515;
-        margin: 6px 0px 6px 40px;
+        margin: 6px;
+    }
 
+    .right-side button {
+        margin-right: 40px;
     }
 
     .right-side ul {
@@ -161,5 +173,65 @@ button {
     .nav-bar.active {
         opacity: 1;
         transition: 0.2s;
-    };
+    }
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.footer-nav, .footer-socials {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-socials {
+    font-size: 20px;
+    gap: 40px;
+}
+
+.footer ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #151515;
+    display: block;
+    margin: 2px;
+}
+
+.footer ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.footer-socials a {
+    height: 40px;
+    width: 40px;
+    background-color: #f0f0f0;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5 ease;
+}
+
+.footer-socials a:hover {
+    background-color: #dedede;
+    transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        width: 50%;
+        margin-bottom: 30px;
+        padding-right: 0px;
+    }
 }
