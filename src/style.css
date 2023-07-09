@@ -22,10 +22,6 @@ ul {
     gap: 40px;
 }
 
-h1 {
-    font-family: 'Manrope', sans-serif;
-}
-
 button {
     padding: 15px 30px;
     font-size: 16px;
@@ -39,6 +35,11 @@ button {
     font-family: 'Montserrat', sans-serif;
     border-radius: 70px;
     flex-shrink: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 100;
 }
 
 .get-in-touch:hover {
@@ -60,7 +61,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
     position: relative;
 }
 
@@ -70,8 +70,8 @@ button {
     border: 0;
     width: 100%;
     height: 1px;
-    margin: 0;
     box-sizing: border-box;
+    margin-top: 20px;
 }
 
 .logo {
@@ -98,11 +98,6 @@ button {
     transition: 0.5s;
 }
 
-.content {
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
 .section-home h1 {
     text-align: left;
     font-size: 80px;
@@ -118,21 +113,28 @@ button {
 }
 
 .our-services {
-    margin: 30px 0px;
+    margin: 30px 0;
     color: white;
     background-color: #151515;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+    .containers {
+        gap: 30px; 
+    }
+
     .section-home h1 {
         font-size: 50px;
         max-width: 600px;
     }
-
+    
     .section-home span {
         font-size: 25px;
+        max-width: 500px;
     }
+}
 
+@media (max-width: 1000px) {
     .page-wrapper {
         margin: 20px;
         padding: 30px;
@@ -176,9 +178,41 @@ button {
     }
 }
 
+.label {
+    font-size: 16px;
+}
+
+.section-header {
+    font-size: 32px;
+}
+
+.section-home, .section-about, .section-services, .section-work {
+    margin-bottom: 40px;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    width: 180px;
+    height: 300px;
+    padding: 30px 40px;
+    line-height: 1.7;
+}
+
+.container-text {
+    color: #757575;
+    font-family: 'Manrope', sans-serif;
+}
+
 .footer {
     padding-top: 20px;
-    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -228,10 +262,11 @@ button {
     transition: 0.5s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .footer {
         width: 50%;
         margin-bottom: 30px;
         padding-right: 0px;
     }
+
 }
