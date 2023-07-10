@@ -8,20 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
-    <title>Interior Design Studio</title>
+    <title>Design Interior Studio</title>
 </head>
 <body>
     <div class="page-wrapper">
-        <div class="header">
+        <div id="header" class="header">
             <div class="left-side">
                 <a href="index.html"><img src="img/logo.png" alt="logotype" class="logo"></a>
             </div>
             <div class="right-side">
                 <ul class="nav-bar">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#services-section">Services</a></li>
+                    <li><a href="#portfolio-section">Work</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
                 <button class="get-in-touch">Get in touch</button>
                 <div class="hamburger">
@@ -35,10 +35,10 @@
         <div class="content">
             <div class="section-home">
                 <h1 class="main-header">Unique-customized solutions in construction and furnishing</h1>
-                <span class="home-text">Transform your space into your dream home. Let's make your interior better.</span>
+                <span class="home-text">Transform your space into your dream home. We work remotely - all over the world!</span>
                 <button class="our-services">Our services</button>
             </div>
-            <div class="section-about">
+            <div id="about-section" class="section-about">
                 <span class="label">ABOUT</span>
                 <hr class="block-seperator">
                 <div class="containers">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-services">
+            <div id="services-section" class="section-services">
                 <span class="label">SERVICES</span>
                 <hr class="block-seperator">
                 <h2 class="section-header">Our Services</h2>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="container-services">
                         <img class="interior-image-services" src="/src/img/interior.jpg" alt="interior">
-                        <h2 class="container-services section-header">We deliver exceptional interior design to elevate your space.</h2>
+                        <h2 class="container-services section-header">We deliver exceptional interior design to elevate your space</h2>
                         <div class="container-services-step">
                             <span class="label">STEP ONE</span>
                             <span class="container-text">Step One is all about asking the right questions, bringing our experience and foresight to the table to get a solid understanding of your operational requirements and setting objectives. Once the design concept is visualised, our expert team will show you a preliminary presentation with samples, colours, photos and perspective sketches to convey our design concepts.</span>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-work">
+            <div id="portfolio-section" class="section-work">
                 <span class="label">WORK</span>
                 <hr class="block-seperator">
                 <div class="section-work-header">
@@ -130,16 +130,42 @@
                     </a>
                 </div>
             </div>
+            <div id="contact-section" class="section-contact">
+                <div class="section-contact-left">
+                    <span class="label">CONTACT</span>
+                    <h2 class="section-contact-container-header">Let's make your interior better</h2>
+                    <span class="section-contact-container-text">We believe that good design is instrumental to improving people's lives.</span>
+                </div>
+                <div class="section-contact-right">
+                    <form method="get">
+                        <div class="form-row">
+                            <label for="username" class="form-hint">NAME</label>
+                            <input id="username" type="text" class="field" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email" class="form-hint">EMAIL ADDRESS</label>
+                            <input id="email" type="email" class="field" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="text" class="form-hint">MESSAGE</label>
+                            <textarea id="text" class="field" placeholder="Your Message..."></textarea>
+                        </div>
+                        <div class="form-row-last">
+                            <button class="send-button">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
         <hr class="block-seperator">
         <div class="footer">
             <div class="footer-upper">
                 <a href="index.html"><img src="img/logo.png" alt="logotype" class="logo"></a>
                 <ul class="footer-nav">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#services-section">Services</a></li>
+                    <li><a href="#portfolio-section">Work</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
                 <div class="footer-socials">
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>

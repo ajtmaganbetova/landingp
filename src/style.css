@@ -1,4 +1,7 @@
 /* #fffae7 yellow */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     background-image: url("https://images.unsplash.com/photo-1635776062043-223faf322554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80");
@@ -37,7 +40,7 @@ button {
     flex-shrink: 0;
 }
 
-h1, h2, h3, .latest .text-latest {
+h1, h2, h3, .latest .text-latest, label, input::placeholder, textarea::placeholder {
     font-family: 'Manrope', sans-serif;
     font-weight: 100;
 }
@@ -104,7 +107,7 @@ h1, h2, h3, .latest .text-latest {
     max-width: 1000px;
 }
 
-.section-home span, .containers-about-us-text {
+.section-home span, .containers-about-us-text, .section-contact-container-text {
     display: block;
     font-size: 26px;
     font-weight: 200;
@@ -113,13 +116,13 @@ h1, h2, h3, .latest .text-latest {
     line-height: 1.5;
 }
 
-.our-services, .get-in-touch-services {
+.our-services, .get-in-touch-services, .send-button {
     margin: 30px 0;
     color: white;
     background-color: #151515;
 }
 
-.our-services:hover, .get-in-touch-services:hover {
+.our-services:hover, .get-in-touch-services:hover, .send-button:hover {
     background-color: #444444;
     border-color: #444444;
     transition: 0.2s;
@@ -193,9 +196,9 @@ h1, h2, h3, .latest .text-latest {
     font-size: 45px;
 }
 
-.section-home, .section-about, .section-services, .section-work {
+.section-home, .section-about, .section-services, .section-work, .section-contact {
     padding-top: 40px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .containers {
@@ -211,7 +214,7 @@ h1, h2, h3, .latest .text-latest {
     margin-top: 80px;
 }
 
-.section-header-left-aligned {
+.section-header-left-aligned, .section-contact-container-header {
     font-size: 45px;
 }
 
@@ -245,7 +248,7 @@ h1, h2, h3, .latest .text-latest {
     justify-content: space-between;
 }
 
-.containers-about-us-text {
+.containers-about-us-text, .section-contact-container-text {
     max-width: 550px;
 }
 
@@ -285,7 +288,7 @@ h1, h2, h3, .latest .text-latest {
     object-position: 0 70%;
 }
 
-.container-services-first .get-in-touch-services {
+.container-services-first .get-in-touch-services, .send-button {
     margin-left: 0px;
     margin-top: 25px;
     font-size: 13px;
@@ -372,6 +375,61 @@ h1, h2, h3, .latest .text-latest {
         -ms-transition: all 0.2s linear;
          -o-transition: all 0.2s linear;
             transition: all 0.2s linear;
+}
+
+.section-contact {
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 50px 0px;
+    margin: 50px 0 70px 0;
+}
+
+.section-contact-container-header, .section-contact-container-text {
+    text-align: start;
+    max-width: 450px;
+}
+
+.form-row {
+    margin-top: 35px;
+}
+ 
+.form-hint {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.field {
+    box-sizing: border-box;
+    width: 400px;
+    border: 1px solid #222222;
+    padding: 15px 20px;
+}
+
+.form-row textarea {
+    height: 100px;
+}
+
+.form-row .field {
+    border: 1px solid #dedede;
+}
+
+.form-row .field:focus {
+    outline: 1px solid #151515;
+    border: 1px solid white;
+    outline-offset: 0px;
+    transition: 0.1ms;
+}
+
+input::placeholder, textarea::placeholder {
+    letter-spacing: 1px;
+}
+
+.send-button {
+    width: 25%;
 }
 
 .footer {
